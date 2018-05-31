@@ -20,6 +20,9 @@ function operaciones(op)
 		
 		multiplicar: function multiplicarNumeros(n1, n2) {
             return (parseInt(n1) * parseInt(n2));
+        },
+         dividir: function dividirNumeros(n1, n2) {
+            return (parseInt(n1) / parseInt(n2));
         }
         
 
@@ -53,10 +56,15 @@ function operaciones(op)
                 var resultado = ops.restar(num1, num2);
                 alert (resultado);
                 break;
-			case 'multiplicar':
+	    case 'multiplicar':
                 var resultado = ops.multiplicar(num1, num2);
                 alert(resultado);
                 break;
+            case 'dividir':
+                var resultado = ops.dividir(num1, num2);
+                alert(resultado);
+                break;
+
            
         }
     }
@@ -77,6 +85,7 @@ function operaciones(op)
     <input type="button" value="SUMAR" onclick="operaciones(&#39;sumar&#39;); return false;"><br>
     <input type="button" value="RESTAR" onclick="operaciones(&#39;restar&#39;); return false;"><br>
     <input type="button" value="MULTIPLICAR" onclick="operaciones(&#39;multiplicar&#39;); return false;"><br>
+    <input type="button" value="DIVIDIR" onclick="operaciones(&#39;dividir&#39;); return false;">
 </form>
 
 
